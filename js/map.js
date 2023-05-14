@@ -68,7 +68,7 @@ function handleSubmit() {
 
   formAdressEl.addEventListener("submit", async (e) => {
     e.preventDefault();
-
+    if (!inputAddressEl) return;
     await getCoordinatesFromAddress(inputAddressEl.value);
     inputAddressEl.value = "";
   });
