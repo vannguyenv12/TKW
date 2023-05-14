@@ -1,20 +1,20 @@
 async function getCoordinatesFromAddress(addressInput) {
   try {
-    var accessToken =
+    const accessToken =
       "pk.eyJ1IjoidmFubmd1eWVudjEyIiwiYSI6ImNsaG5hcW5oZzBlb2Mzam5ndTFodTJ2Z2EifQ.Q8I2IbBuQRGGrOLF-WIUlg";
 
-    var address = addressInput;
+    const address = addressInput;
 
-    var geocodingUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+    const geocodingUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
       address
     )}.json?access_token=${accessToken}`;
 
-    var response = await fetch(geocodingUrl);
-    var data = await response.json();
+    const response = await fetch(geocodingUrl);
+    const data = await response.json();
 
-    var coordinates = data.features[0].geometry.coordinates;
-    var longitude = coordinates[0];
-    var latitude = coordinates[1];
+    const coordinates = data.features[0].geometry.coordinates;
+    const longitude = coordinates[0];
+    const latitude = coordinates[1];
 
     console.log("Kinh độ:", longitude);
     console.log("Vĩ độ:", latitude);
