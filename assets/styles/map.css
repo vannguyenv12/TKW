@@ -1,0 +1,19 @@
+.address-input {
+  outline: #d56e84 !important;
+  border: 2px solid #d56e84;
+}
+
+.btn-primary {
+  border-color: none !important;
+}
+
+.btn-address {
+  background-color: #d56e84 !important;
+  border: none;
+  outline: none;
+  border-color: none !important;
+}
+
+.btn-primary:hover {
+  border-color: none !important;
+}

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/headerFooter.css" />
+    <link rel="stylesheet" href="./assets/styles/headerFooter.css" />
+    <link rel="stylesheet" href="./assets/styles/map.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -26,7 +27,7 @@
     <div class="header"></div>
 
     <form class="p-5 form-address mt-3">
-      <div class="form-group">
+      <div class="form-group webflow-style-input">
         <label for="exampleInputPassword1">Nhâp địa điểm:</label>
         <input
           type="text"
@@ -38,7 +39,7 @@
       <button type="submit" class="btn btn-primary btn-address">Submit</button>
     </form>
 
-    <div id="map" style="height: 100vh"></div>
+    <div id="map" style="height: 90vh" class="p-5 m-5"></div>
 
     <div class="footer"></div>
 
@@ -48,9 +49,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(".footer").load("./headerFooter/footer.html");
-      $(".header").load("./headerFooter/header.html");
+      $(".footer").load("./assets/headerFooter/footer.html");
+      $(".header").load("./assets/headerFooter/header.html");
     </script>
-    <script type="module" src="./js/map.js"></script>
+    <script type="module" src="./assets/js/map.js"></script>
   </body>
 </html>

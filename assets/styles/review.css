@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+p,
+h2 {
+  font-family: "Dancing Script", cursive;
 }
 
 :root {
@@ -19,6 +33,7 @@
   /* --color-secondary: #ffc513; */
   --color-secondary: #d56e84;
   --color-secondary-m-light: #ec96a9;
+  --color-secondary-m-light-2: #f8adbd;
   --color-secondary-m-dark: rgba(255, 196, 19, 0.85);
 
   /* Transtion Duration */
@@ -113,7 +128,9 @@ section#testimonials {
 /* 1turn => 360deg => meaning 0.5turn => 180deg */
 .testimonials__card--back {
   transform: perspective(100rem) rotateY(0.5turn);
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary-m-light-2); */
+  background-color: #f9b3c2;
+  border-radius: 10px;
 }
 
 .testimonials__card:hover .testimonials__card--front {
