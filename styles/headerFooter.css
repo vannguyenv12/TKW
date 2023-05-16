@@ -53,7 +53,7 @@ header > ul li > a:hover {
 .underScore {
   border-bottom: 1px solid var(--primaryColor);
 }
-footer {
+.footer {
   padding: 30px;
   height: auto;
   box-shadow: -1px -1px 1px;
@@ -91,7 +91,7 @@ footer div {
   height: 100vh !important;
   background-color: #fadce3e2;
   position: fixed;
-  transform: translateX(-500px);
+  transform: translateX(-1000px);
   z-index: 2;
   transition: 0.3s;
   cursor: pointer;
